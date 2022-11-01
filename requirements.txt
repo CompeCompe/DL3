@@ -1,0 +1,13 @@
+!pip install ffmpeg-python
+!pip install pyTelegramBotAPI
+!pip install vosk wave
+
+import os
+import telebot
+import requests
+import subprocess
+import ffmpeg
+
+from vosk import Model, KaldiRecognizer, SetLogLevel
+import wave
+import json
