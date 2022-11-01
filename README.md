@@ -12,8 +12,10 @@
 
 | №   | Название  |Время выполнения Файла1, с  | WER Файла1 | Время выполнения Файла2, с   | WER Файла2  |
 |:---:|:---:      |:---:                       |:---:       |:---:                         |:---:        |
-| 1   | [NEMO_ASR #1](experiments/nemo_asr.ipynb) | 1.403  | 0  | 1.003                   | 0.875       |
-| 2   | [NEMO_ASR #2](experiments/nemo_asr.ipynb) | 1.389  | 0  | 0.980                   | 0.875       |
+| 1   | [NEMO_ASR #1 (Nvidia weights)](experiments/nemo_asr.ipynb) | 1.403  | 0  | 1.003   | 0.875       |
+| 2   | [NEMO_ASR #2 (Сбер weights)](experiments/nemo_asr.ipynb)   | 1.389  | 0  | 0.980   | 0.875       |
+| 3   | [SpeechRecognition](experiments/speech_recognition.ipynb)  | 0.621  | 0.636  | 2.892   | 0.625   |
+| **4   | [NEMO_ASR #2 (Сбер weights)](experiments/nemo_asr.ipynb) | 0.713  | 0  | 2.701   | 0.5625**    |
 
 Словами описать почему выбрали воск
 
