@@ -34,14 +34,12 @@
 
 Для запуска необходимо:
 1. Установить зависимости из requirements.txt
-2. Склонировать `git clone https://github.com/alphacep/vosk-api`
-3. Скачать веса для русской модели
-`%cd vosk-api/python/example
-#Russian lang model
-!wget https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip
+2. Скачать [веса](https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip) для русской модели, переместить их в папку **model**
+или с помощью команд 
+`!wget https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip
 !unzip vosk-model-ru-0.22.zip
 %mv vosk-model-ru-0.22 model`
-4. Вставить свой собственный **token** в файле `bot.py`, при необходимости изменить путь до скаченной модели
+4. Вставить свой собственный **token** в файле `bot.py`, при необходимости изменить путь до скаченной модели (`bot.py` запускали в колабе)
 5. Запустите файл `bot.py`
 
 Пример работы, показан ниже
