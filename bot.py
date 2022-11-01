@@ -11,7 +11,7 @@ import json
 token = 'PASTE YOUR OWN TOKEN'
 bot = telebot.TeleBot(token)
 # was run in colab, if you will run it on different place, change path
-model = Model('/content/vosk-api/python/example/model') 
+model = Model('/content/model')
 
 def audio_to_text(input_file: str):
 
