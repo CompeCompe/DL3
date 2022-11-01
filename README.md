@@ -33,7 +33,7 @@
 ## Реализация ТГ бота
 
 Для запуска необходимо:
-1. Установить зависимости из requirements.txt
+1. Установить зависимости из requirements.txt (pip install -r requirements.txt)
 2. Скачать [веса](https://alphacephei.com/vosk/models/vosk-model-ru-0.22.zip) для русской модели, переместить их в папку **model**
 или с помощью команд:
 
