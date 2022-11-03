@@ -8,10 +8,9 @@ from vosk import Model, KaldiRecognizer
 import wave
 import json
 
-token = 'PASTE YOUR OWN TOKEN'
+token = os.getenv("TELEGRAM_TOKEN")
 bot = telebot.TeleBot(token)
-# was run in colab, if you will run it on different place, change path
-model = Model('/content/model')
+model = Model('model')
 
 def audio_to_text(input_file: str):
 
