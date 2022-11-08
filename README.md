@@ -61,3 +61,10 @@
 * [HuBERT](https://huggingface.co/docs/transformers/model_doc/hubert)
 * [wav2vec](https://arxiv.org/abs/2006.11477)
 * etc.
+
+## Запуск через docker
+1) В Dockerfile прописать токен бота на 20 строке, вместо "put yor own token"
+2) В командной строке вызвать "docker build ." и дождаться, когда соберется образ
+3) С помощью команды "docker images" найти новый образ и скопировать его "IMAGE ID"
+4) Запустить команду "docker run IMAGE ID (полученный на прошлом шаге)" 
+5) Дождаться пока образ поднимется
