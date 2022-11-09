@@ -17,6 +17,8 @@ RUN mv vosk-model-ru-0.22 model
 
 COPY . .
 
-ENV TELEGRAM_TOKEN put yor own token
+ARG ttoken
+
+ENV TELEGRAM_TOKEN $ttoken
 
 CMD [ "python", "bot.py" ]
