@@ -36,6 +36,7 @@ def audio_to_text(input_file: str):
 
 @bot.message_handler(content_types=["voice"])
 def get_audio_messages(message):
+    
     try:
         # Get file from TG
         file_info = bot.get_file(message.voice.file_id)
@@ -47,11 +48,14 @@ def get_audio_messages(message):
                            )
         with open(fname + ".oga", "wb") as f:
             f.write(doc.content)
+        
         # Transform from OGA to WAV
         process = subprocess.run(["ffmpeg", "-i", fname + ".oga", fname + ".wav"])
+        
         # Calling ASR func
         result = audio_to_text(fname + ".wav")
         bot.send_message(message.from_user.id, format(result))
+    
     finally:
         os.remove(fname + ".wav")
         os.remove(fname + ".oga")
